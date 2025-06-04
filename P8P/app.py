@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, send_from_directory
 import webview
 from backend.flujo_engine import ejecutar_flujo
 
@@ -21,6 +21,21 @@ def run_flujo():
     flujo_path = os.path.join('flujos', data['flujo'])
     resultados = ejecutar_flujo(flujo_path)
     return jsonify(resultados)
+
+@app.route('/download/<path:archivo>')
+def download_flujo(archivo):
+    return send_from_directory('flujos', archivo, as_attachment=True)
+
+@app.route('/upload', methods=['POST'])
+def upload_flujo():
+    archivo = request.files.get('file')
+    carpeta = request.form.get('carpeta', '')
+    ruta = os.path.join('flujos', carpeta)
+    os.makedirs(ruta, exist_ok=True)
+    if archivo:
+        archivo.save(os.path.join(ruta, archivo.filename))
+        return 'subido'
+    return 'no-file', 400
 
 @app.route('/node/<nombre>', methods=['GET', 'POST'])
 def editar_nodo(nombre):
