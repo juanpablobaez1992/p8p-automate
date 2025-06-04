@@ -14,9 +14,11 @@ Establece `FLASK_ONLY=1` si no deseas usar PyWebview.
 ## Uso visual
 
 1. Selecciona un flujo en la página principal.
-2. Haz clic en *Ejecutar flujo* para ver los resultados paso a paso.
-3. Descarga o carga archivos JSON para compartir tus flujos.
-4. Cambia al modo avanzado para editar el código de cualquier nodo.
+2. Indica desde qué paso deseas iniciar la ejecución.
+3. Haz clic en *Ejecutar flujo* para ver los resultados paso a paso.
+4. Descarga o carga archivos JSON para compartir tus flujos.
+5. Cambia al modo avanzado para editar el código de cualquier nodo.
+6. Activa el **Modo Oscuro** si lo prefieres.
 
 ## Crear nuevos flujos
 

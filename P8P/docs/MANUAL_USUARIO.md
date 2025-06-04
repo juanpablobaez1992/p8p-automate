@@ -19,11 +19,12 @@ Si deseas iniciar solo el servidor web sin la ventana de escritorio, define la v
 
 ## Cargar y ejecutar flujos
 1. Desde la página principal selecciona uno de los archivos JSON listados en la carpeta `flujos/`.
-2. Presiona **Ejecutar flujo** para procesar cada paso. La salida de un nodo se pasa como entrada al siguiente.
-3. Puedes descargar tus flujos o subir nuevos para compartirlos.
+2. Usa el campo *Desde paso* para iniciar la ejecución en un punto específico.
+3. Presiona **Ejecutar flujo** para procesar cada paso. La salida de un nodo se pasa como entrada al siguiente.
+4. Puedes descargar tus flujos o subir nuevos para compartirlos.
 
 ## Modo avanzado
-Activa el modo desarrollador para editar el código de los nodos directamente desde la interfaz. Esto permite personalizar cada acción según tus necesidades.
+Activa el modo desarrollador para editar el código de los nodos directamente desde la interfaz. También puedes alternar el **Modo Oscuro** según tu preferencia. Esto permite personalizar cada acción según tus necesidades.
 
 ## Crear nuevos nodos
 1. Dentro de la carpeta `nodes/` crea un archivo `.py`.

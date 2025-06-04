@@ -19,7 +19,8 @@ def index():
 def run_flujo():
     data = request.get_json()
     flujo_path = os.path.join('flujos', data['flujo'])
-    resultados = ejecutar_flujo(flujo_path)
+    desde = int(data.get('desde', 0))
+    resultados = ejecutar_flujo(flujo_path, desde=desde)
     return jsonify(resultados)
 
 @app.route('/download/<path:archivo>')
