@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "tipo": "leer_url",
+    "params": {"url": "https://example.com"}
+  },
+  {
+    "id": "2",
+    "tipo": "extraer_titulo",
+    "params": {}
+  },
+  {
+    "id": "3",
+    "tipo": "guardar_txt",
+    "params": {"archivo": "titulo.txt"}
+  }
+]
