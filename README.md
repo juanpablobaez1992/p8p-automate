@@ -1,31 +1,24 @@
-# p8p-automate
+# P8P Automate
 
-Este repositorio contiene ejemplos y proyectos automatizados. Revisa la carpeta `n8n_desktop_python/` para una app de escritorio inspirada en n8n.
+**P8P** es una plataforma de automatización visual inspirada en n8n y potenciada con Python. Está pensada para docentes, equipos pastorales, periodistas y cualquier persona que quiera simplificar tareas repetitivas sin depender de la nube.
 
-## Nodos de IA
+- 🟢 Diseño 100% local: crea y ejecuta flujos sin enviar datos a terceros.
+- 🖥️ Interfaz intuitiva con modo básico y avanzado.
+- ⚡ Ejecuta nodos Python listos para usar o modifica el código en vivo.
 
-En la raíz del proyecto se incluyen dos nodos para conectarse a modelos de lenguaje:
+El proyecto incluye una versión de escritorio (carpeta `n8n_desktop_python/`) y una implementación simplificada en `P8P/`.
 
-- `nodes/chatgpt_custom.py` utiliza la API de OpenAI.
-- `nodes/gemini_pro.py` usa la API de Google Generative AI.
+## Beneficios clave
+- **Automatiza procesos** como lectura de RSS, manejo de PDFs o envío a Telegram.
+- **Expandible** mediante nodos personalizados que siguen la función `ejecutar(entrada: dict) -> dict`.
+- **Sin límites**: comparte tus flujos en archivos JSON y ejecútalos en cualquier equipo con Python.
 
-Cada nodo implementa la función `ejecutar(entrada: dict) -> dict` y puede ser importado dinámicamente por el motor de flujos.
+Consulta el [manual de usuario](P8P/docs/MANUAL_USUARIO.md) para instrucciones paso a paso.
 
-### Instalación de dependencias
-
+## Primeros pasos rápidos
 ```bash
-pip install openai google-generativeai
+pip install -r P8P/requirements.txt
+python P8P/app.py
 ```
 
-### Crear nuevos nodos
-
-1. Crea un archivo dentro de la carpeta `nodes/`.
-2. Define una función `ejecutar(entrada: dict) -> dict` que procese los parámetros y devuelva un diccionario.
-3. El nombre del archivo debe coincidir con el campo `tipo` del flujo JSON.
-
-### Integrar en el flujo P8P
-
-Los flujos se definen como listas de pasos en la carpeta `flujos/`. Un ejemplo se encuentra en `flujos/flujo_ia.json`.
-Al ejecutar el motor, la salida de cada nodo se pasa como entrada al siguiente.
-
-Cada nodo es modular, por lo que es sencillo incorporar soporte para otros modelos (por ejemplo Ollama u opciones locales) creando nuevos archivos en `nodes/`.
+Descubre cómo la automatización puede agilizar tu día y libera tiempo para lo que realmente importa.
