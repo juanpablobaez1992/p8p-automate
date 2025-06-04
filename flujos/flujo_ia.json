@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "tipo": "chatgpt_custom",
+    "params": {
+      "api_key": "TU_OPENAI_API_KEY",
+      "mensaje": "Explicame el sentido del sufrimiento segun Juan Pablo II",
+      "instruccion": "Sos un teologo catolico que escribe para jovenes"
+    }
+  },
+  {
+    "id": "2",
+    "tipo": "guardar_txt",
+    "params": {
+      "archivo": "respuesta_ia.txt"
+    }
+  }
+]
