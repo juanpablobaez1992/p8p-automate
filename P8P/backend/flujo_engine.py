@@ -14,13 +14,14 @@ def cargar_modulo(nombre):
     return modulo
 
 
-def ejecutar_flujo(ruta_flujo):
+def ejecutar_flujo(ruta_flujo, desde: int = 0):
+    """Ejecuta un flujo JSON a partir del indice indicado."""
     with open(ruta_flujo) as f:
         pasos = json.load(f)
 
     datos = {}
     logs = []
-    for paso in pasos:
+    for paso in pasos[desde:]:
         tipo = paso['tipo']
         params = paso.get('params', {})
         modulo = cargar_modulo(tipo)
