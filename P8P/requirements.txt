@@ -1,0 +1,10 @@
+flask
+requests
+openai
+pywebview
+google-generativeai
+beautifulsoup4
+PyMuPDF
+openpyxl
+qrcode
+uuid
