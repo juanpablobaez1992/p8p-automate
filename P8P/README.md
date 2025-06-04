@@ -1,6 +1,7 @@
 # P8P
 
 Plataforma local y visual para automatizar tareas mediante flujos de nodos Python.
+Incluye un logotipo inspirado en n8n con la "P" de Python.
 
 ## Ejecución
 
@@ -14,7 +15,8 @@ Establece `FLASK_ONLY=1` si no deseas usar PyWebview.
 
 1. Selecciona un flujo en la página principal.
 2. Haz clic en *Ejecutar flujo* para ver los resultados paso a paso.
-3. Cambia al modo avanzado para editar el código de cualquier nodo.
+3. Descarga o carga archivos JSON para compartir tus flujos.
+4. Cambia al modo avanzado para editar el código de cualquier nodo.
 
 ## Crear nuevos flujos
 
