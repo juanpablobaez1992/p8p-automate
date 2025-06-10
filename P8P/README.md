@@ -3,6 +3,9 @@
 Plataforma local y visual para automatizar tareas mediante flujos de nodos Python.
 Incluye un logotipo inspirado en n8n con la "P" de Python.
 
+Viene con más de 50 flujos listos para usar y la misma cantidad de nodos
+disponibles para personalizar tus automatizaciones.
+
 ## Ejecución
 
 ```bash

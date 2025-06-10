@@ -21,4 +21,9 @@ pip install -r P8P/requirements.txt
 python P8P/app.py
 ```
 
+La aplicación incluye más de 50 flujos de ejemplo y la misma cantidad de nodos
+listos para usar. Puedes ejecutar el archivo anterior desde el directorio raíz
+o ingresar a `P8P/` y ejecutar `python app.py`; en ambos casos se cargarán todos
+los recursos automáticamente.
+
 Descubre cómo la automatización puede agilizar tu día y libera tiempo para lo que realmente importa.
