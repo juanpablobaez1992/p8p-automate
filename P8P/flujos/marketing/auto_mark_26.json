@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "tipo": "chatgpt_custom",
+    "params": {
+      "api_key": "TU_OPENAI_API_KEY",
+      "mensaje": "Tarea marketing auto 26",
+      "instruccion": "Marketing"
+    }
+  },
+  {
+    "id": "2",
+    "tipo": "guardar_txt",
+    "params": {
+      "archivo": "auto_mark_26.txt"
+    }
+  }
+]
