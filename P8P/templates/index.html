@@ -9,6 +9,10 @@
 </head>
 <body class="p-4">
   <h1><img src="{{ url_for('static', filename='logo.svg') }}" alt="logo" width="50" class="me-2">P8P</h1>
+  <div class="alert alert-info" role="alert">
+    Selecciona un flujo, indica el paso inicial y presiona <strong>Ejecutar Flujo</strong>.
+    Activa el Modo Avanzado para modificar los nodos si lo deseas.
+  </div>
   <div class="mb-3">
     <label class="form-label">Flujo</label>
     <select id="flujo" class="form-select">
